@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barber Shop - Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="pricelist.html">Price List</a></li>
+    </ul>
+  </nav>
+
+<!-- Booking Form -->
+<section class="booking">
+    <h2>Book an Appointment</h2>
+    <form id="booking-form" action="https://formspree.io/f/mwpvblzv" method="POST">
+      <label>
+        Your Name:
+        <input type="text" name="name" placeholder="Enter your name" required>
+      </label>
+      <label>
+        Your Email:
+        <input type="email" name="email" placeholder="Enter your email">
+      </label>
+      <label for="phone">Phone Number:</label>
+
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+      <label>
+        Select Type of Appointment:
+        <select name="appointment-type" required>
+          <option value="" disabled selected>Choose an option</option>
+          <option value="Dreadlocks retwist 7k">Dreadlocks retwist 7k</option>
+          <option value="Dreadlocks retwist and interlock 10k">Dreadlocks retwist and interlock 10k</option>
+          <option value="Instant lock (short/half) 35k">Instant lock (short/half) 35k</option>
+          <option value="Instant lock (full head) 50k">Instant lock (full head) 50k</option>
+          <option value="Dreadlocks installation 
+          Half 35k/ full head 50k">Dreadlocks installation 
+            Half 35k/ full head 50k</option>
+            <option value="Basic haircut 2k">Basic haircut 2k</option>
+            <option value="Pro enhanced hair 3500">Pro enhanced hair 3500 </option>
+            <option value="Frontal installation 15k">Frontal installation 15k</option>
+            <option value="Braid 10k">Braid 10k </option>
+            <option value="Weaving 10k">Weaving 10k</option>
+            <option value="Revamping 7k">Revamping 7k</option>
+        </select>
+      </label>
+      <label>
+        Appointment Date:
+        <input type="date" name="date" required>
+      </label>
+      <label>
+        Appointment Time:
+        <input type="time" name="time" required>
+      </label>
+      <label>
+        Additional Message (Optional):
+        <textarea name="message" placeholder="Any special requests?"></textarea>
+      </label>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+</body>
+</html>
