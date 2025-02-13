@@ -6,46 +6,12 @@
   <title>Barber Shop - Contact</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Additional CSS for Contact Page */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      background-color: #333;
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      color: #ffcc00;
-    }
-
+    /* Contact Page Specific Styles */
     .contact-info {
       max-width: 600px;
       margin: 50px auto;
       padding: 20px;
-      background-color: white;
+      background-color: rgb(0, 0, 0);
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: center;
@@ -54,34 +20,35 @@
     .contact-info h1 {
       font-size: 2.5em;
       margin-bottom: 20px;
-      color: #333;
+      color: #ffffff; /* Changed to white for better contrast */
     }
 
     .contact-info p {
       font-size: 1.2em;
       margin: 15px 0;
-      color: #555;
+      color: #cccccc; /* Light gray for better readability */
     }
 
     .contact-info a {
-      color: #007bff;
+      color: #4a90e2; /* Brighter blue for better visibility */
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     .contact-info a:hover {
+      color: #7ab7ff;
       text-decoration: underline;
     }
 
     .contact-info strong {
-      color: #333;
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
-  
-  <!-- Navigation Bar -->
   <nav>
-    <ul>
+    <div class="menu-icon" id="menuIcon">☰</div>
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -95,15 +62,12 @@
   <div class="contact-info">
     <h1>Contact Us</h1>
     <p>If you have any questions or need assistance, feel free to reach out to us:</p>
-
-    <!-- Email -->
     <p><strong>Email:</strong> <a href="mailto:godcoem@gmail.com">godcoem@gmail.com</a></p>
-
-    <!-- Phone Number -->
     <p><strong>Phone:</strong> <a href="tel:+2347077682255">+234 707 768 2255</a></p>
-
-    <!-- WhatsApp -->
     <p><strong>WhatsApp:</strong> <a href="https://wa.me/2347077682255" target="_blank">Chat on WhatsApp</a></p>
   </div>
+
+  <!-- Add this at the end of body -->
+  <script src="script.js"></script>
 </body>
 </html>
